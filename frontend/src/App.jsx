@@ -12,6 +12,7 @@ import useAuth from "./hooks/useAuth";
 import UserListAdmin from "./admin/users/UserListAdmin";
 import UserEditAdmin from "./admin/users/UserEditAdmin";
 import SwaggerDocs from "./public/swagger";
+import DeveloperContainer from "./developers";
 
 function ErrorFallback({ error, resetErrorBoundary }) {
   return (
@@ -59,6 +60,7 @@ function App() {
         {/* <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} /> */}        
         <Route path="/logout" element={<Logout />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/developers" element={<DeveloperContainer />} />
       </>
     )
   }
